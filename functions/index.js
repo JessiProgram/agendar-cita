@@ -9,3 +9,5 @@ const functions = require("firebase-functions");
 // });
 // REST-API 
 const api = require('./api')
+
+exports.api = functions.region('southamerica-east1').https.onRequest(api)
