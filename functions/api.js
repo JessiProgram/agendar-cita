@@ -8,7 +8,8 @@ app.use(express.urlencoded({
     extended: false
 }))
 
-app.use('/usuarios', require('./src/routes/usuarios'))
+app.use('/usuarios', require('./src/routes/usuario'))
+app.use('/diasTrabajo', require('./src/routes/diasTrabajo'))
 
 app.use((err, req, res, next) => {
     // Manejo de errores para {{ err }}
